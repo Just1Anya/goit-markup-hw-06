@@ -370,23 +370,72 @@ width: 1158px;
   flex-shrink: 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-    url(../images/people/people-office-plus.jpg);
-  max-width: 1440px;
+    url(../images/mobile/pictures_mobile/hero-mobile.jpg);
+  
   background-position: center;
   background-size: cover;
   margin: 0 auto;
   background-repeat: no-repeat;
 }
-@media screen and (min-resolution: 192dpi),
- screen and (min-resolution: 2dppx) {
-  .section-one {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-     url(../images/x2/Dark-bg@2x.jpg) ;
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .section-one  {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/pictures_mobile/hero-mobile@2x.jpg);
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-one  {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/pictures_tablet/hero-tablet.jpg);
+  }
+}
 
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .section-one  {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/pictures_tablet/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-one  {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desk/pictures_desk/hero-desktop.jpg);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .section-one  {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desk/pictures_desk/hero-desktop@2x.jpg);
+  }
+}
 
 .descr-h-one {
   color: var(--white, #FFF);
@@ -1616,7 +1665,7 @@ color: var(--WHITE, #FFF);
   }
   
   .backdrop {
-    display: flex;
+    display: none;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -1891,7 +1940,7 @@ color: var(--WHITE, #FFF);
     }
     
     .backdrop {
-      display: flex;
+      display: none;
       height: 100%;
       width: 100%;
       position: fixed;
@@ -2141,7 +2190,7 @@ color: var(--WHITE, #FFF);
       }
 
     .backdrop-menu {
-      display: flex;
+      display: none;
       height: 100%;
       width: 100%;
       position: fixed;
