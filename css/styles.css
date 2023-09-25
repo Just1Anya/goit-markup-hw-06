@@ -63,7 +63,8 @@ ul {
   }
 
 .container-header {
-  display: flex;
+  display: inline-block;
+  
 }
 
 .logo {
@@ -77,35 +78,23 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   padding: 24px 0;
-  margin-top: 17.5px;
-  margin-bottom: 17.5px;
+  
   }
   
 
 .studio-logo {
   color: var(--navyblue, #2E2F42);
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-right: 100px;
-}
+ }
 
 .open-mobile-menu-btn {
   display: flex;
-  border: none;
+ border: none;
   background-color: transparent;
-  padding: 0;
-  line-height: 0;
+ line-height: 0;
   color: #2F2F37;
-  margin-top: 16px;
-  margin-right: 16px;
-  margin-bottom: 16px;
- 
+ margin-left: 280px;
+ margin-top: 16px;
+
 }
 }
 
