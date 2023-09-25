@@ -54,7 +54,11 @@ ul {
 
 /*header*/
 @media screen and (max-width: 767px) {
-  
+  html, body {
+    
+    overflow-x: hidden;
+}
+
   .links-items-lists {
     display: none;
   }
@@ -99,6 +103,11 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  html, body {
+    
+    overflow-x: hidden;
+}
+
   .open-mobile-menu-btn {
     display: none;
   }
@@ -225,6 +234,10 @@ ul {
   
 }
 @media screen and (min-width: 1158px) {
+  html, body {
+    
+    overflow-x: hidden;
+}
 
   .open-mobile-menu-btn{
     display: none;
@@ -974,7 +987,7 @@ margin-left: 25%;
   .footer-main {
     background: var(--navyblue, #2E2F42);
     padding: 96px 0;
-    display: flex;
+
    }
   
   .logo-footer {
@@ -1015,10 +1028,10 @@ margin-left: 25%;
     width: 264px;
     margin-right: 24px;
     margin-bottom: 72px;
-   
-  
+   margin-left: 108px;
   }
   
+
   .social-links-footer {
     display: flex;
     justify-content: space-between;
@@ -1060,6 +1073,7 @@ margin-left: 25%;
     letter-spacing: 0.02em;
     color: var(--white, #FFF);
     margin-bottom: 16px;
+    
   }
   
   .icon-main-footer {
@@ -1084,6 +1098,7 @@ margin-left: 25%;
     padding-left: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #ffffff;
+    margin-left: 108px;
   
   }
   
@@ -1099,6 +1114,7 @@ margin-left: 25%;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     margin-left: 108px;
+    
   }
   
   ::-webkit-input-placeholder {
@@ -1114,6 +1130,7 @@ margin-left: 25%;
   .label-footer {
     display: flex;
     gap: 24px;
+    
     
   }
   
@@ -1163,8 +1180,8 @@ margin-left: 25%;
     background: var(--navyblue, #2E2F42);
     padding: 100px 0;
     display: flex;
-    width: 1440px;
-    height: 312px;
+    
+    
     flex-shrink: 0;
     margin: 0 auto;
   }
@@ -1180,7 +1197,7 @@ margin-left: 25%;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-  
+ 
     margin-bottom: 16px;
   }
   
@@ -1203,7 +1220,7 @@ margin-left: 25%;
     font-weight: 400;
     letter-spacing: 0.32px;
     line-height: 1.5;
-    width: 264px;
+    
   
   }
   
@@ -1211,7 +1228,7 @@ margin-left: 25%;
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    margin-right: 80px;
+    
   }
   
   .parts-links-footer {
@@ -1274,6 +1291,7 @@ margin-left: 25%;
     padding-left: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #ffffff;
+   
   
   }
   
@@ -1287,6 +1305,7 @@ margin-left: 25%;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
   }
   
   ::-webkit-input-placeholder {
@@ -1302,6 +1321,8 @@ margin-left: 25%;
   .label-footer {
     display: flex;
     gap: 24px;
+    
+    
   }
   
   .button-footer {
@@ -1326,6 +1347,7 @@ margin-left: 25%;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-right: 159px;
   }
   
   .button-footer:hover,
